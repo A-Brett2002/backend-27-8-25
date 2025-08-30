@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuarios</title>
 </head>
 <body>
+    <main>
+        <nav>
+            <a href="/">Inicio/</a>
+            <a href="/usuarios">Usuarios</a>
+        </nav>
+    </main>
     <h1>Lista de Usuarios</h1>
-    <ul>
-        <% usuarios.forEach(usuario => { %>
-            <li><%= usuario.nombre %> - <%= usuario.email %></li>
-        <% }); %>
-    </ul>
+    <section class="Usuarios"> 
+        <ul>
+            <% usuarios.forEach(usuario => { %>
+                <li><%= usuario.nombre %> - <%= usuario.email %></li>
+            <% }); %>
+        </ul>
     
     <a href="/">Volver al inicio</a>
+    </section>
+    
 </body>
 </html>
