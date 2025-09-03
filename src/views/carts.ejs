@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Inicio/</a>
+            <a href="/productos">Productos</a>
+            <a href="/carts">Carritos</a>
+        </nav>
+    <h1>Carritos</h1>
+    <main>
+        <section class="carts">
+           <%carts.forEach(cart=>{%>
+                <div>
+                    <article>
+                        <h2>ID: <%=cart.id%></h2>
+                        <p>Usuario ID: <%=cart.userId%></p>
+                        <p>Fecha: <%=cart.date%></p>
+                        <p>Productos:</p>
+                        <ul>
+                            <%cart.products.forEach(producto=>{ %>
+                                <li>Producto ID: <%=producto.productId%>, Cantidad: <%=producto.quantity%></li>
+                            <%})%>
+                        </ul>
+                    </article>
+                </div>
+            <%})%>
+        </section>
+    </main>
+</body>
+</html>
