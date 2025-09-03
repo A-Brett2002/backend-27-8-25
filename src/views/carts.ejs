@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carts</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
                         <h2>ID: <%=cart.id%></h2>
                         <p>Usuario ID: <%=cart.userId%></p>
                         <p>Fecha: <%=cart.date%></p>
-                        <p>Productos:</p>
+                        <p>Productos : </p>
                         <ul>
                             <%cart.products.forEach(producto=>{ %>
                                 <li>Producto ID: <%=producto.productId%>, Cantidad: <%=producto.quantity%></li>
