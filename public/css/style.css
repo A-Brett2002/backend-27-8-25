@@ -1,6 +1,9 @@
 h1{
     color: rgb(16, 211, 229)
 }
+nav a:hover{
+    text-decoration: underline;
+}
 .products {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
