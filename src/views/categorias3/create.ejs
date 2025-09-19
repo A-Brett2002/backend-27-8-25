@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Categoria</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="/">Inicio/</a>
+                <a href="/productos">Productos/</a>
+                <a href="/usuarios">Usuarios/</a>
+                <a href="/carts">Carts/</a>
+                <a href="/categorias3">Categorias/</a>
+            </ul>
+        </nav>
+    </header>
+    <h1>Crear Categoria</h1>
+    <form action="/categorias3" method="post">
+        <label for="name">Nombre de la categoria:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Crear</button>
+    </form>
+    <p><%= error ? error : '' %></p>
+</body>
+</html>

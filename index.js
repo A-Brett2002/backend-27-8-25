@@ -14,7 +14,6 @@ app.use('/', mainRouter);
 app.use(`/productos`, require('./src/routes/productos.router'));
 app.use(`/usuarios`, require('./src/routes/usuarios.router'));
 app.use(`/carts`, require('./src/routes/carts.router'));
-app.use(`/categorias`, require('./src/routes/categorias.router'));
-
+app.use(`/categorias`, require('./src/routes/categorias3.router'));
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
